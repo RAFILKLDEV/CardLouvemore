@@ -1,38 +1,99 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+  
   background-color: #282c34;
-  min-height: 100vh;
+
+  height: 100vh;
+  width: 100vw;
+
   display: flex;
-  flex-direction: column;
+
+
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
 }
 
-.App-link {
-  color: #61dafb;
+.CardContainer {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Card {
+  height: 533px;
+  width: 800px;
+
+  position: absolute;
+}
+
+.Card *{
+  position: absolute;
+  inset: 0px;
+
+  border: none;
+  background-color: inherit;
+  text-align: center;
+
+  font-size: 38px;
+  font-weight: 300;
+
+  height: 50px;
+  width: 300px;
+}
+
+.CardContainer #Nome {
+  position: absolute;
+  inset: 163px 306px;
+
+  width: 350px;
+}
+
+.Card #RankAca {
+  position: absolute;
+  inset: 320px 555px;
+
+  font-size: 26px;
+
+  width: 100px;
+}
+
+.Card #RankExp {
+  position: absolute;
+  inset: 423px 535px;
+
+  font-size: 26px;
+
+  width: 150px;
+}
+
+.Card #img {
+  position: absolute;
+  inset: 126px 47px;
+
+  width: 200px;
+  height: 200px;
+}
+
+.Card #img2 {
+  position: absolute;
+  inset: 354px 72px;
+
+  background-color: rgb(34, 10, 39);
+
+  width: 150px;
+  height: 150px;
+}
+
+.Info {
+  background-color: rgb(205, 194, 184);
+
+  width: auto;
+  margin-top: 50px;
+  height: auto;
+}
+
+.Info * {
+  margin: 2px 5px;
 }
